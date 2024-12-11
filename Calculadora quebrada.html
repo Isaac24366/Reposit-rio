@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Quebrada</title>
+        <link rel="stylesheet" href="Outros códigos/style calculadora.css">
+    <body>
+
+        <input type="text" class="input" id="display" disabled>
+        <button onclick="clear()" class="c">C</button><br>
+
+        <button onclick="number('7')">7</button>
+        <button onclick="number('8')">8</button>
+        <button onclick="number('9')">9</button>
+        <button onclick="op('/')">÷</button><br>
+        
+        <button onclick="number('4')">4</button>
+        <button onclick="number('5')">5</button>
+        <button onclick="number('6')">6</button>
+        <button onclick="op('*')">x</button><br>
+        
+        <button onclick="number('1')">1</button>
+        <button onclick="number('2')">2</button>
+        <button onclick="number('3')">3</button>
+        <button onclick="op('-')">-</button><br>
+        
+        <button onclick="number('0')">0</button>
+        <button onclick="number('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="op('+')">+</button><br>
+        <!--<button onclick="updateDisplay()"></button>-->
+
+        <h1 id="tela"></h1>
+
+        <canvas class="canva"></canvas>
+        
+        <script src="Outros códigos/script calculadora.js" defer></script>
+    </body>
+</html>
